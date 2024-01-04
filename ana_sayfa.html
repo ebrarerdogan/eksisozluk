@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Gündem</h1>
+  <ul>
+    {% for baslik in basliklar %}
+      <li><a href="baslik/{{ baslik['id'] }}">{{ baslik['baslik'] }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
